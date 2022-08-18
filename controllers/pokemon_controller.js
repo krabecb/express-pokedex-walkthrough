@@ -4,9 +4,7 @@ const router = express.Router()
 const pokemon = require('../models/pokemon')
 
 router.get('/', (req, res) => {
-    pokemon.forEach(singlePokemon => {
-        console.log(singlePokemon.name)
-    })
+    res.render('pokemon_index.ejs', {allPokemon: pokemon})
 })
 
 module.exports = router
