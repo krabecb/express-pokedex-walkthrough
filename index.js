@@ -7,6 +7,7 @@ const PORT = 3000
 app.set('view engine', 'ejs')
 
 //MIDDLEWARE
+app.use(express.static('public'))
 //Necessary for POST and PUT routes when using req.body
 //Incoming request object recognized as JSON object
 app.use(express.json())
@@ -16,6 +17,10 @@ app.use(express.urlencoded({ extended: false }))
 //CONTROLLERS
 
 //GENERIC ROUTES
+
+app.get('/', (req, res) => {
+    res.render('index.ejs')
+})
 
 //SERVER LISTEN
 app.listen(PORT, () => {
