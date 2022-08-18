@@ -1,0 +1,11 @@
+<%- include('./partials/header.ejs') %>
+
+<form method="POST" action="/pokemon/<%= id %>?_method=PUT">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" value="<%= pokemon.name %>">
+    <label for="img">Image</label>
+    <input type="text" name="img" id="img" value="<%= pokemon.img %>">
+    <button>Edit</button>
+</form>
+
+<%- include('./partials/footer.ejs') %>

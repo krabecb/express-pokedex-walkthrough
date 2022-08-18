@@ -1,5 +1,6 @@
 //REQUIREMENTS
 const express = require('express')
+const methodOverride = require('method-override')
 
 //CONFIGURATIONS
 const app = express()
@@ -13,6 +14,7 @@ app.use(express.static('public'))
 app.use(express.json())
 //Recognize incoming request object as strings or arrays
 app.use(express.urlencoded({ extended: false }))
+app.use(methodOverride('_method'))
 
 //CONTROLLERS
 const pokemonController = require('./controllers/pokemon_controller')
