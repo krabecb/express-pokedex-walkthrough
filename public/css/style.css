@@ -1,8 +1,73 @@
 body {
-    background-color: peachpuff;
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    height: 30px;
+}
+
+button {
+    margin-top: 15px;
+    height: 30px;
+    width: 150px;
+}
+
+h1 {
+    text-align: center;
 }
 
 img {
     height: auto;
     width: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.pokemon-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.show-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.show-link {
+    color: deepskyblue;
+    font-weight: bolder;
+}
+
+#header-p {
+    margin: 0;
 }

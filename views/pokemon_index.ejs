@@ -1,9 +1,13 @@
 <%- include('./partials/header.ejs') %>
 
     <h1>Pokemon Index Page</h1>
-    <% for(let i = 0; i < allPokemon.length; i++) { %>
-        <h3><a href="/pokemon/<%= i %>"><%= allPokemon[i].name %></a></h3>
-        <img src="<%= allPokemon[i].img %>" alt="<%= allPokemon[i].name %>">
-    <% } %>
+    <div class="pokemon-container">
+        <% for(let i = 0; i < allPokemon.length; i++) { %>
+            <div class="pokemon-card">
+                <h3><a href="/pokemon/<%= i %>"><%= allPokemon[i].name %></a></h3>
+                <img src="<%= allPokemon[i].img %>" alt="<%= allPokemon[i].name %>">
+            </div>
+        <% } %>
+    </div>
 
 <%- include('./partials/footer.ejs') %>

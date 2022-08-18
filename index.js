@@ -21,7 +21,6 @@ const pokemonController = require('./controllers/pokemon_controller')
 app.use('/pokemon', pokemonController)
 
 //GENERIC ROUTES
-
 app.get('/', (req, res) => {
     res.render('index.ejs')
 })
