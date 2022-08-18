@@ -15,6 +15,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 //CONTROLLERS
+const pokemonController = require('./controllers/pokemon_controller')
+app.use('/pokemon', pokemonController)
 
 //GENERIC ROUTES
 
