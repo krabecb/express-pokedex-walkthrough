@@ -11,6 +11,12 @@ router.get('/new', (req, res) => {
     res.render('pokemon_new.ejs')
 })
 
+router.post('/', (req, res) => {
+    const createdPokemon = req.body
+    pokemon.push(createdPokemon)
+    res.redirect('/pokemon')
+})
+
 router.get('/:id', (req, res) => {
     res.render('pokemon_show.ejs', {pokemon: pokemon[req.params.id]})
 })

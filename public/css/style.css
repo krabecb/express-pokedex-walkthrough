@@ -1,3 +1,8 @@
 body {
     background-color: peachpuff;
 }
+
+img {
+    height: auto;
+    width: 200px;
+}
