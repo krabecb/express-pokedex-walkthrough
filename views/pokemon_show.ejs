@@ -19,5 +19,8 @@
         <% } %>
     </ul>
     <a href="/pokemon/<%= id %>/edit">Edit pokemon</a>
+    <form method="POST" action="/pokemon/<%= id %>?_method=DELETE">
+        <button>Delete <%= pokemon.name %></button>
+    </form>
 
 <%- include('./partials/footer.ejs') %>

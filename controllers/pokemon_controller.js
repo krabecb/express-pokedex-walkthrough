@@ -32,4 +32,9 @@ router.put('/:id', (req, res) => {
     res.redirect(`/pokemon/${req.params.id}`)
 })
 
+router.delete('/:id', (req, res) => {
+    pokemon.splice(req.params.id, 1)
+    res.redirect('/pokemon')
+})
+
 module.exports = router
