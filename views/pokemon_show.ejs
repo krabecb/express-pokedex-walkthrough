@@ -1,0 +1,31 @@
+<%- include('./partials/header.ejs') %>
+
+    <h1><%= pokemon.name %></h1>
+
+    <img src="<%= pokemon.img %>" alt="<%= pokemon.name %>">
+
+    <h3>Type:</h3>
+
+    <ul>
+
+        <% for (let i = 0; i < pokemon.type.length; i++) { %>
+
+            <li><%= pokemon.type[i] %></li>
+
+        <% } %>
+
+    </ul>
+
+    <h3>Stats:</h3>
+
+    <ul>
+
+        <% for (const property in pokemon.stats) { %>
+
+            <li><%= property %>: <%= pokemon.stats[property] %></li>
+
+        <% } %>
+
+    </ul>
+
+<%- include('./partials/footer.ejs') %>
