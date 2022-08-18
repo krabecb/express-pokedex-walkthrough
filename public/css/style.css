@@ -5,6 +5,7 @@ body {
 
 nav {
     color: black;
+    font-weight: bolder;
 }
 
 a {
@@ -24,6 +25,14 @@ button {
 
 h1 {
     text-align: center;
+}
+
+h5 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: gold;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 0 10px 0; 
 }
 
 img {
@@ -51,21 +60,38 @@ form {
 }
 
 .pokemon-card {
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
     margin: 15px;
+    border: 2px solid gold;
+}
+
+.line-break {
+    height: 1px;
+    width: 80%;
+    background-color: black;
+    margin-bottom: 15px;
 }
 
 .show-container {
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px;
+    margin-top: 15px;
 }
 
 .show-link {
+    background-color: whitesmoke;
     color: deepskyblue;
+    width: 150px;
     font-weight: bolder;
+    text-align: center;
+    border-radius: 2px;
 }
 
 #header-p {

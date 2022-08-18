@@ -5,6 +5,8 @@
         <% for(let i = 0; i < allPokemon.length; i++) { %>
             <div class="pokemon-card">
                 <h3><a href="/pokemon/<%= i %>"><%= allPokemon[i].name %></a></h3>
+                <div class="line-break"></div>
+                <h5>Class: <%= allPokemon[i].misc.classification %></h4>
                 <img src="<%= allPokemon[i].img %>" alt="<%= allPokemon[i].name %>">
             </div>
         <% } %>
